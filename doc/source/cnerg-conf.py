@@ -11,8 +11,8 @@
 
 # General information about the project.
 # CNERG-stub - change these
-project = u'Long Project Name'
-copyright = u'2012, UW CNERG Team'
+project = u'ATR NSUF Experiment Design Toolkit'
+copyright = u'2009-2012, UW CNERG Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -25,22 +25,22 @@ version = '0.1'
 release = '0.1'
 
 html_theme_options = { 
-'site_title' : u'CNERG Stub',
-'tagline' : u'Stub settings for CNERG Sphinx projects'
+'site_title' : u'ATR NSUF Experiment Design Toolkit',
+'tagline' : u'Tools and Workflows for Rapid Experiment Design Iteration for the ATR NSUF'
 }
 html_title = 'CNERG Stub'
 
 # CNERG Change: global replace LongProjectName (and variations) with a
 # brief one line name of the project
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'LongProjectNamedoc'
+htmlhelp_basename = 'ATRNSUFExperimentDesignToolkitdoc'
 
 # -- Options for LaTeX output --------------------------------------------------
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'LongProjectName.tex', u'Long Project Name Documentation',
+  ('index', 'ATRNSUFExperimentDesignToolkit.tex', u'ATR NSUF Experiment Design Tookit Documentation',
    u'UW CNERG Team', 'manual'),
 ]
 
@@ -49,7 +49,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'longprojectname', u'Long Project Name Documentation',
+    ('index', 'atrnsufexperimentdesigntoolkit', u'ATR NSUF Experiment Design Tookit Documentation',
      [u'UW CNERG Team'], 1)
 ]
 
@@ -59,7 +59,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'LongProjectName', u'Long Project Name Documentation',
-   u'UW CNERG Team', 'LongProjectName', 'One line description of project.',
+  ('index', 'ATRNSUFExperimentDesignToolkit', u'ATR NSUF Experiment Design Tookit Documentation',
+   u'UW CNERG Team', 'ATRNSUFExperimentDesignToolkit', 'One line description of project.',
    'Miscellaneous'),
 ]

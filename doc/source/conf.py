@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# UW-Madison Computational Nuclear Engineering Research Group (CNERG) documentation build configuration file, created by
+# ATR NSUF Experiment Design Toolkit documentation build configuration file, created by
 # sphinx-quickstart on Tue Jul 24 22:55:15 2012.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -41,8 +41,8 @@ master_doc = 'index'
 
 # General information about the project.
 # CNERG-stub - change these
-project = u'UW-Madison Computational Nuclear Engineering Research Group (CNERG)'
-copyright = u'2012, Paul Wilson'
+project = u'ATR NSUF Experiment Design Toolkit'
+copyright = u'2009-2012'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -100,8 +100,8 @@ html_theme = 'uwtheme'
 # documentation.
 # CNERG-stub - change these
 html_theme_options = { 
-'site_title' : u'CNERG',
-'tagline' : u'UW-Madison\'s Computational Nuclear Engineering Research Group'
+'site_title' : u'ATR NSUF Experiment Design Toolkit',
+'tagline' : u'Rapid Design Iterations for ATR NSUF Experiments'
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -110,10 +110,10 @@ html_theme_path = ['_themes']
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 # CNERG-stub - change this
-html_title = 'CNERG'
+html_title = 'ATR NSUF Experiment Design Toolkit'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-#html_short_title = None
+html_short_title = 'ATR NSUF EDT'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -171,7 +171,7 @@ html_last_updated_fmt = '%b %d, %Y'
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'UW-MadisonComputationalNuclearEngineeringResearchGroupCNERGdoc'
+htmlhelp_basename = 'ATRNSUFExperimentDesignToolkitdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -190,7 +190,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'UW-MadisonComputationalNuclearEngineeringResearchGroupCNERG.tex', u'UW-Madison Computational Nuclear Engineering Research Group (CNERG) Documentation',
+  ('index', 'ATRNSUFExperimentDesignToolkit.tex', u'ATR NSUF Experiment Design Toolkit Documentation',
    u'Paul Wilson', 'manual'),
 ]
 
@@ -220,7 +220,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'uw-madisoncomputationalnuclearengineeringresearchgroupcnerg', u'UW-Madison Computational Nuclear Engineering Research Group (CNERG) Documentation',
+    ('index', 'atrnsufexperimentdesigntoolkit', u'ATR NSUF Experiment Design Toolkit Documentation',
      [u'Paul Wilson'], 1)
 ]
 
@@ -234,8 +234,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'UW-MadisonComputationalNuclearEngineeringResearchGroupCNERG', u'UW-Madison Computational Nuclear Engineering Research Group (CNERG) Documentation',
-   u'Paul Wilson', 'UW-MadisonComputationalNuclearEngineeringResearchGroupCNERG', 'One line description of project.',
+  ('index', 'ATRNSUFExperimentDesignToolkit', u'ATR NSUF Experiment Design Toolkit Documentation',
+   u'Paul Wilson', 'ATRNSUFExperimentDesignToolkit', 'One line description of project.',
    'Miscellaneous'),
 ]
 
