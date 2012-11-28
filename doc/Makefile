@@ -19,18 +19,16 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 .PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext
 
 gh-pages:
-	cd ..
 	git checkout gh-pages
-	rm -rf doc
 	git checkout master $(GH_PAGES_SOURCES)
 	git reset HEAD
-	cd doc
 	make html
+	rm -rf ../_static ../_sources
 	mv -fv build/html/* ../
 	cd ..
 	rm -rf doc
 	git add -A
-	git ci -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages ; 
+	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages
 	git checkout master
 
 help:
