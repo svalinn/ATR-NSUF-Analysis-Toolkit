@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# ATR NSUF Experiment Design Toolkit documentation build configuration file, created by
-# sphinx-quickstart on Tue Nov 27 23:08:27 2012.
+# UW-Madison Computational Nuclear Engineering Research Group (CNERG) documentation build configuration file, created by
+# sphinx-quickstart on Tue Jul 24 22:55:15 2012.
 #
 # This file is execfile()d with the current directory set to its containing dir.
 #
@@ -25,7 +25,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.intersphinx']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx', 'sphinx.ext.todo']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -40,13 +40,15 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'ATR NSUF Experiment Design Toolkit'
-copyright = u'2012, UW CNERG'
+# CNERG-stub - change these
+project = u'UW-Madison Computational Nuclear Engineering Research Group (CNERG)'
+copyright = u'2012, Paul Wilson'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
+# CNERG-stub - change these
 # The short X.Y version.
 version = '0.1'
 # The full version, including alpha/beta/rc tags.
@@ -91,19 +93,24 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+html_theme = 'uwtheme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+# CNERG-stub - change these
+html_theme_options = { 
+'site_title' : u'CNERG',
+'tagline' : u'UW-Madison\'s Computational Nuclear Engineering Research Group'
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+html_theme_path = ['_themes']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+# CNERG-stub - change this
+html_title = 'CNERG'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -124,7 +131,7 @@ html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-#html_last_updated_fmt = '%b %d, %Y'
+html_last_updated_fmt = '%b %d, %Y'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
@@ -164,7 +171,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'ATRNSUFExperimentDesignToolkitdoc'
+htmlhelp_basename = 'UW-MadisonComputationalNuclearEngineeringResearchGroupCNERGdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -183,8 +190,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'ATRNSUFExperimentDesignToolkit.tex', u'ATR NSUF Experiment Design Toolkit Documentation',
-   u'UW CNERG', 'manual'),
+  ('index', 'UW-MadisonComputationalNuclearEngineeringResearchGroupCNERG.tex', u'UW-Madison Computational Nuclear Engineering Research Group (CNERG) Documentation',
+   u'Paul Wilson', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -213,8 +220,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'atrnsufexperimentdesigntoolkit', u'ATR NSUF Experiment Design Toolkit Documentation',
-     [u'UW CNERG'], 1)
+    ('index', 'uw-madisoncomputationalnuclearengineeringresearchgroupcnerg', u'UW-Madison Computational Nuclear Engineering Research Group (CNERG) Documentation',
+     [u'Paul Wilson'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -227,8 +234,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'ATRNSUFExperimentDesignToolkit', u'ATR NSUF Experiment Design Toolkit Documentation',
-   u'UW CNERG', 'ATRNSUFExperimentDesignToolkit', 'One line description of project.',
+  ('index', 'UW-MadisonComputationalNuclearEngineeringResearchGroupCNERG', u'UW-Madison Computational Nuclear Engineering Research Group (CNERG) Documentation',
+   u'Paul Wilson', 'UW-MadisonComputationalNuclearEngineeringResearchGroupCNERG', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -244,3 +251,6 @@ texinfo_documents = [
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'http://docs.python.org/': None}
+
+
+execfile('cnerg-conf.py')

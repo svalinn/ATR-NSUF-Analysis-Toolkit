@@ -1,22 +1,19 @@
-.. ATR NSUF Experiment Design Toolkit documentation master file, created by
-   sphinx-quickstart on Tue Nov 27 23:08:27 2012.
+.. master file, 
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ATR NSUF Experiment Design Toolkit's documentation!
-==============================================================
+CNERG Sphinx project stub
+=================
 
-Contents:
+This repository contains all the files necessary to initiate a new Sphinx project with the CNERG Theme.
+
+Change the settings in cnerg-conf.py.  Be sure to find all the
+occurrences of "Long Project Name" and derivatives such as
+``LongProjectName`` and ``longprojectname`` and replace with an
+appropriate name, formatted appriopriately.
 
 .. toctree::
-   :maxdepth: 2
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   :maxdepth: 1
+   :hidden:
+ 
+   self
