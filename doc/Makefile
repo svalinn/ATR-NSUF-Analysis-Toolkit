@@ -19,8 +19,9 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 .PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext
 
 gh-pages:
+	cd ..
 	git checkout gh-pages
-	rm -rf build _sources _static
+	rm -rf doc
 	git checkout master $(GH_PAGES_SOURCES)
 	git reset HEAD
 	cd doc
