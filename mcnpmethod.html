@@ -1,0 +1,168 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>MCNP5 Method &mdash; CNERG Stub</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="CNERG Stub" href="index.html" />
+    <link rel="next" title="DAG-MCNP5 Method" href="dagmcnpmethod.html" />
+    <link rel="prev" title="ATR NSUF Experiment Design Toolkit" href="index.html" /> 
+  </head>
+  <body>
+     
+<div id="page-div" class="page">
+<div id="header"><a id="uwhome" href="http://www.wisc.edu"><img src="http://cnergdata.engr.wisc.edu/_static/images/wordmark.gif" alt="University of Wisconsin–Madison" width="260" height="11" /></a> <a id="crest" href="http://www.wisc.edu"><img src="http://cnergdata.engr.wisc.edu/_static/images/crest.png" alt="" width="70" height="106" /></a>
+    <h1 id="siteTitle"><a href="/"><span>ATR NSUF Experiment Design Toolkit</span></a></h1>
+    <div id="tagline"><span>Tools and Workflows for Rapid Experiment Design Iteration for the ATR NSUF</span></div>
+    <ul id="globalnav">
+      <li id="uwsearch"><a href="http://www.wisc.edu/search/">UW Search</a></li>
+      <li><a href="http://my.wisc.edu">My UW</a></li>
+      <li><a href="http://map.wisc.edu">Map</a></li>
+      <li id="last_tool"><a href="http://www.today.wisc.edu">Calendar</a></li>
+    </ul>
+    <form role="search" action="search.html" method="get" id="cse-search-box">
+      <div>
+      <label class="screen-reader-text" for="q">Search for:</label>
+      <input type="text" id="q" name="q" value="Enter keywords here...." />
+      <input type="submit" id="sa" value="Search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+      </div>
+    </form>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+
+
+    <div id="nav" class="main-menu-container">
+      <ul id="menu-main" class="sf-menu">
+        <li class="menu-item"><a href="index.html">ATR NSUF EDT</a></li>
+        <li class="menu-item" style="margin-right: 10px">
+          <a href="index.html" title="ATR NSUF Experiment Design Toolkit"
+             accesskey="P">previous</a>
+          </li>
+        <li class="menu-item" >
+          <a href="dagmcnpmethod.html" title="DAG-MCNP5 Method"
+             accesskey="N">next</a>
+          </li>
+        <li class="menu-item" >
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a>
+          </li> 
+      </ul>
+    </div>
+  <div id="c_container"> 
+<div id="sidebar">
+ <div id="sidebar_section"></div>
+ <div id="sidebar_section"><ul>
+<li><a class="reference internal" href="#">MCNP5 Method</a><ul>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#directions">Directions</a></li>
+</ul>
+</li>
+</ul>
+ </div>
+</div> 
+    <div id="content" class="inline-block">
+          <div class="post">
+            
+  <div class="section" id="mcnp5-method">
+<h1>MCNP5 Method<a class="headerlink" href="#mcnp5-method" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>Use of the MCNP5 option requires:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">That the user be proficient in MCNP, specifically the coding of
+MCNP geometries.  For those users who are unfamiliar with MCNP, we
+recommend the <a class="reference external" href="http://www.mne.ksu.edu/~jks/MCNPprmr.pdf">introductory primer</a> written by
+J.K. Shultis and R.E. Faw:</p>
+</li>
+<li><p class="first">That the MCNP5 software package be installed on the users
+computer, or that the user have access to a network on which it is
+installed.  The package can be obtained free of charge from the
+<a class="reference external" href="http://rsicc.ornl.gov">Radiation Safety Information Computational Center (RSICC)</a> website.</p>
+</li>
+<li><p class="first">That the following files be stored in the directory from which
+MCNP will be run:</p>
+<p>MCNP cutout input file associated with the ATR-3 region being
+analyzed.  This file is named in accordance with the following
+pattern: the name of the region, followed by the word &#8220;mini&#8221;,
+followed by an extension &#8221;.i&#8221;.  For example, for the region I-6,
+the MCNP cutout input file is named &#8220;I6mini.i&#8221;.  It can be
+downloaded on the package website (as yet unspecified).</p>
+<p>xrssa file.  This file contains the surface source that will be
+read into MCNP.  When downloaded from the package website (as yet
+unspecified), it will be named in accordance with the following
+pattern: the name of the region, followed by &#8221;.w&#8221;.  For example,
+the rssa file for region I6 will be named &#8220;I6.w&#8221;.  The user needs
+to download that file into the working MCNP directory, and then
+rename it to &#8220;rssa&#8221;.</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="directions">
+<h2>Directions<a class="headerlink" href="#directions" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Add the necessary cell and surface definitions in the appropriate
+sections of the MCNP cutout input file (e.g., I6mini.i) so as to
+incorporate the desired experiment geometry.  Note: this step
+requires basic proficiency in the language MCNP.  Unfamiliar users
+should consult the MCNP Primer linked above.</li>
+<li>Add the experiment materials to the material section of the MCNP
+cutout input file so as to define any materials that are used in
+the above cell definitions.</li>
+<li>Add tallies to the data section of the MCNP cutout input file to
+get out the information of interest.  A generic mesh tally is
+included in the MCNP cutout input file for reference.</li>
+<li>Run the MCNP cutout input file in MCNP.  To do this, open up a
+command prompt, navigate to the working directory, and type in
+mcnp5 i=nameofMCNPcutoutfile(eg, I6mini.i)
+o=nameofoutputfile(youdecide).</li>
+</ol>
+</div></blockquote>
+<p>Surface source files can be found <a class="reference internal" href="surfacesourcefiles.html"><em>here</em></a>.</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+</div>
+    <div id="footer">
+      <p>
+        &copy; Copyright 2009-2012, UW CNERG Team.
+      </p>
+      <p>
+      Last updated on Nov 28, 2012.
+      </p>
+      <p>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      </p>
+    </div>
+  </body>
+</html>
