@@ -22,7 +22,7 @@ gh-pages:
 	git checkout gh-pages 
 	git checkout master $(GH_PAGES_SOURCES)
 	git reset HEAD 
-	rm -rf ../_static ../_sources build
+	rm -rf _static _sources build
 	make html
 	mv -fv build/html/* .
 	rm -rf $(GH_PAGES_SOURCES) build
