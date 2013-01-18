@@ -1,3 +1,3 @@
-DAG-MCNP5 Method TEST
+DAG-MCNP5 Method
 =================
 
