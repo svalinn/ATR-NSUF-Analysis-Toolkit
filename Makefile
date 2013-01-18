@@ -37,7 +37,7 @@ gh-preview:
 	rm -rf _static _sources build
 	make html
 	mv -fv build/html/* .
-	git checkout master
+
 
 gh-clean:
 	git checkout gh-pages
