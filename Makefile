@@ -41,6 +41,7 @@ gh-preview:
 gh-retry:
 	git checkout gh-pages 
 	git checkout -f --
+	rm -rf $(GH_PAGES_SOURCES) build Makefile
 	git checkout master 
 
 gh-clean:
