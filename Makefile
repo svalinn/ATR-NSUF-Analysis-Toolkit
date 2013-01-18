@@ -40,12 +40,12 @@ gh-preview:
 	git checkout master
 
 gh-clean:
-    git checkout gh-pages
+	git checkout gh-pages
 	rm -rf $(GH_PAGES_SOURCES) build
-    git checkout master    
+	git checkout master    
 
 gh-push:
-    git checkout gh-pages
+	git checkout gh-pages
 	git add -A 
 	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages 
 	git checkout master
