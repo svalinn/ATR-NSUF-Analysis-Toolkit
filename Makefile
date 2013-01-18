@@ -30,6 +30,27 @@ gh-pages:
 	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages 
 	git checkout master
 
+gh-preview:
+	git checkout gh-pages 
+	git checkout master $(GH_PAGES_SOURCES)
+	git reset HEAD 
+	rm -rf _static _sources build
+	make html
+	mv -fv build/html/* .
+	git checkout master
+
+gh-clean:
+    git checkout gh-pages
+	rm -rf $(GH_PAGES_SOURCES) build
+    git checkout master    
+
+gh-push:
+    git checkout gh-pages
+	git add -A 
+	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages 
+	git checkout master
+
+
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html       to make standalone HTML files"
