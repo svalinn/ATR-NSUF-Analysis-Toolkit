@@ -38,6 +38,10 @@ gh-preview:
 	make html
 	mv -fv build/html/* .
 
+gh-retry:
+	git checkout gh-pages 
+	git checkout -f --
+	git checkout master 
 
 gh-clean:
 	git checkout gh-pages
