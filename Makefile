@@ -39,13 +39,13 @@ gh-preview:
 	mv -fv build/html/* .
 
 gh-revert:
-	git checkout gh-pages 
-	git checkout -f --
+	git checkout -q gh-pages 
+	git checkout -fq --
 	rm -rf $(GH_PAGES_SOURCES) build 
 	git checkout master 
 
 gh-push:
-	git checkout gh-pages
+	git checkout -q gh-pages
 	rm -rf $(GH_PAGES_SOURCES) build
 	git add -A 
 	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages 
