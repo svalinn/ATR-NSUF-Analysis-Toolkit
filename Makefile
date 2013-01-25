@@ -1,7 +1,7 @@
 # Makefile for Sphinx documentation 
 #
 
-GH_PAGES_SOURCES = doc Makefile
+GH_PAGES_SOURCES = doc
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
@@ -22,8 +22,6 @@ help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  gh-pages   to make and push HTML documentation in gh-pages branch"
 	@echo "  gh-preview to make HTML documentation in gh-pages branch for preview"
-	@echo "  gh-revert  to revert changes made to gh-pages branch and switch back to master"
-	@echo "  gh-push    to push HTML documentation in gh-pages branch"
 	@echo "  html       to make standalone HTML files"
 	@echo "  dirhtml    to make HTML files named index.html in directories"
 	@echo "  singlehtml to make a single large HTML file"
@@ -64,18 +62,6 @@ gh-preview:
 	make html
 	mv -fv build/html/* .
 
-gh-revert:
-	git checkout  gh-pages 
-	git checkout -f --
-	rm -rf $(GH_PAGES_SOURCES) build 
-	git checkout master 
-
-gh-push:
-	git checkout  gh-pages
-	rm -rf $(GH_PAGES_SOURCES) build
-	git add -A 
-	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages 
-	git checkout master
 
 clean:
 	-rm -rf $(BUILDDIR)/*
